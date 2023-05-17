@@ -81,7 +81,7 @@ const Header = () => {
       <LogoType><SparcsLogo>SPARCS</SparcsLogo> Bank</LogoType>
     </LogoWrapper>
     <NavLinkGroup>
-      <AsyncSpinner isLoading={isLoading}>
+      <AsyncSpinner isLoading={isLoading} size={36}>
         { 
           userData && (userData.loggedIn ?  <>
             <LinkItem>송금하기</LinkItem>

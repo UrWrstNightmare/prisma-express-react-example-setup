@@ -9,13 +9,14 @@ const AsyncSpinnerWrapper = styled.div`
 const AsyncSpinner = (props) => {
   return props.isLoading ? 
     <AsyncSpinnerWrapper>
-      <RingLoader/>
+      <RingLoader size={props.size}/>
     </AsyncSpinnerWrapper> :
     props.children
 }
 
 AsyncSpinner.propTypes = {
   isLoading: PropTypes.bool.isRequired,
+  size: PropTypes.number.isRequired,
   children: PropTypes.node,
 }
 
